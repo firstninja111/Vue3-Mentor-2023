@@ -21,6 +21,11 @@ const router = createRouter({
       path: '/reactivity',
       name: 'reactivity',
       component: () => import('../views/ReactivityView.vue')
+    },
+    {
+      path: '/style-binding',
+      name: 'style-binding',
+      component: () => import('../views/StyleBinding.vue')
     }
   ]
 })
