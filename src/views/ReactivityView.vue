@@ -30,6 +30,26 @@
         count.value++
         await nextTick()
     }
+
+    // Wirtable computed properities
+    const firstName = ref('John')
+    const lastName = ref('Doe')
+
+    const fullName = computed({
+        get() {
+            return firstName.value + ' ' + lastName.value
+        },
+        set(newValue) {
+            [firstName.value, lastName.value] = newValue.split(' ')
+        }
+    })
+
+    const handleInput = (event: Event) => {
+        const inputElement = event.target as HTMLInputElement
+        const inputValue = inputElement.value
+        console.log(inputValue)
+        fullName.value = inputValue
+    }
 </script>
 
 <template>
@@ -39,5 +59,10 @@
         <button @click.once="mutateDepply">Click Me To Mutate Deeply</button>
         <p>{{ deepObj }}</p>
         <button @click="asyncIncreasement">Async Count Increasement</button>
+        <div>
+            <input :value="fullName" @input="handleInput"/>
+            <p>{{ firstName }}</p>
+            <p>{{ lastName }}</p>    
+        </div>
     </div>
 </template>
