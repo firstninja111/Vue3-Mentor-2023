@@ -26,6 +26,11 @@ const router = createRouter({
       path: '/style-binding',
       name: 'style-binding',
       component: () => import('../views/StyleBinding.vue')
+    },
+    {
+      path: '/watcher-test',
+      name: 'watcher-test',
+      component: () => import('../views/WatcherView.vue')
     }
   ]
 })
