@@ -4,6 +4,8 @@
 
     const isActive = ref(true)
     const hasError = ref(true)
+    const toogle = ref(true)
+    const pick = ref("first")
 
     // We can also make classObject as computed property when we need complex conditionals
     const classObject = computed(() => ({
@@ -28,5 +30,18 @@
         <!-- Passing class into child component -->
         <MyComponent class="baz"/>
         <div :style="styleObject"></div>
+        
+        <!-- Checkbox true, false value customize -->
+        <input type="checkbox" v-model="toogle" true-value="yes" false-value="no"/>
+        <p>{{ toogle }}</p>
+
+        <div class="radio-group">
+            <input id="first" type="radio" v-model="pick" value="first"/>
+            <label for="first">First</label>
+            <input id="second" type="radio" v-model="pick" value="second"/>
+            <label for="second">Second</label>
+
+            <p>{{ pick }}</p>
+        </div>
     </div>
 </template>
