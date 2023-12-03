@@ -31,6 +31,11 @@ const router = createRouter({
       path: '/watcher-test',
       name: 'watcher-test',
       component: () => import('../views/WatcherView.vue')
+    },
+    {
+      path: '/template-ref',
+      name: 'template-ref',
+      component: () => import('../views/templateRef.vue')
     }
   ]
 })
