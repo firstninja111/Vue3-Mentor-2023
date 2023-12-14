@@ -39,7 +39,7 @@ const postFontSize = ref(1)
                 v-for="item in list"
                 :key="item"
                 :title="item"
-                @enlarge-text="postFontSize += 1"
+                @enlarge-text="(n:number) => postFontSize += n"
             />
         </div>
         <table>

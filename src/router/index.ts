@@ -36,6 +36,11 @@ const router = createRouter({
       path: '/template-ref',
       name: 'template-ref',
       component: () => import('../views/templateRef.vue')
+    },
+    {
+      path: '/custom-event',
+      name: 'custom-event',
+      component: () => import('../views/CustomEvent.vue')
     }
   ]
 })
