@@ -18,6 +18,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/watcher-test">Watcher Test</RouterLink>
         <RouterLink to="/template-ref">Template Ref</RouterLink>
         <RouterLink to="/custom-event">Custom V-model</RouterLink>
+        <RouterLink to="/composable">Composable</RouterLink>
       </nav>
     </div>
   </header>

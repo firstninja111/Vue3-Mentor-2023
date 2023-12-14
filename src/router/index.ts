@@ -41,6 +41,11 @@ const router = createRouter({
       path: '/custom-event',
       name: 'custom-event',
       component: () => import('../views/CustomEvent.vue')
+    },
+    {
+      path: '/composable',
+      name: 'composable',
+      component: () => import('../views/ComposableView.vue')
     }
   ]
 })
