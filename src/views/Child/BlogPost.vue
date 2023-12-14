@@ -11,6 +11,8 @@
     //     (e: 'update', value: number): void
     // }>()
 
+    
+    // It also support object syntax as emit parameter.
     const emit = defineEmits({
         // No validation
         'enlarge-text': null,
@@ -33,7 +35,6 @@
     const customSubmitForm = (email, password) => {
         emit('custom-submit', { email, password })
     }
-    // It also support object syntax as emit paramater.
     
 </script>
 <template>
