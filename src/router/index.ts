@@ -46,6 +46,11 @@ const router = createRouter({
       path: '/composable',
       name: 'composable',
       component: () => import('../views/ComposableView.vue')
+    },
+    {
+      path: '/built-in-component',
+      name: 'built-in-component',
+      component: () => import('../views/BuiltInComponent.vue')
     }
   ]
 })

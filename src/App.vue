@@ -19,6 +19,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/template-ref">Template Ref</RouterLink>
         <RouterLink to="/custom-event">Custom V-model</RouterLink>
         <RouterLink to="/composable">Composable</RouterLink>
+        <RouterLink to="/built-in-component">Built-in component</RouterLink>
       </nav>
     </div>
   </header>
